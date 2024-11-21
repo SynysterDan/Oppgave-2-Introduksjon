@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduksjons</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <H1> Om meg</H1>
+    <br>
+     <li> Jeg gamer og har gjort siden jeg kan huske </li>
+     <li> Liker også å se på anime og lese manga </li>
+     <li> Alltid vært veldig glad i musikk, hører på nesten alt (Metal er best) </li>
+     <li> Har også interesse for vitenskap spesifikt Astrofysikk, Kjemi og Marine Biologi </li>
+    <br>
+    <img src="https://wallpaperaccess.com/full/6999296.jpg" alt="gigachad">
+
+    <div id="buttonDiv">
+        <button onclick="changeColor ('red')"> Magical button </button>
+        <button onclick="changeColor ('purple')"> Mystical button </button>
+    </div>
+    <script>
+        let buttonDiv = document.getElementById('buttonDiv');
+        function changeColor(color) {
+            buttonDiv.style.background = color;
+            buttonDiv.innerHTML = /*HTML*/`
+            
+                <button onclick="changeColor ('red')"> Magical button </button>
+                <button onclick="changeColor ('purple')"> Mystical button </button>
+            `;
+        }
+        
+    </script>
+
+</body>
+
+</html>
